@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GPA_Eaplatt3_Calculator</string>
+    <string name="firstGrade">Enter First Grade</string>
+    <string name="secondGrade">Enter Second Grade</string>
+    <string name="thirdGrade">Enter Third Grade</string>
+    <string name="fourthGrade">Enter Fourth Grade</string>
+    <string name="fifthGrade">Enter Fifth Grade</string>
+</resources>
