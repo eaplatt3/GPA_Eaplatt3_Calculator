@@ -7,9 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txt_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/btn"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,11 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/firstGrade"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+
         />
 
     <EditText
@@ -31,17 +29,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/secondGrade"
-        app:layout_constraintLeft_toRightOf="@+id/edt1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/edt1"/>
 
     <EditText
         android:id="@+id/edt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/thirdGrade"
-        app:layout_constraintTop_toBottomOf="@+id/edt1"
+        app:layout_constraintTop_toBottomOf="@+id/edt2"
         />
 
     <EditText
@@ -49,15 +44,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/fourthGrade"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toRightOf="@+id/edt3"
-        app:layout_constraintTop_toBottomOf="@+id/edt2"/>
+        app:layout_constraintTop_toBottomOf="@+id/edt3"/>
 
     <EditText
         android:id="@+id/edt5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/fifthGrade"
-        app:layout_constraintTop_toBottomOf="@+id/edt3"/>
+        app:layout_constraintTop_toBottomOf="@+id/edt4"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="read_number"
+        android:text="@string/calculateGPA"
+        android:textColor="@color/btn_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
